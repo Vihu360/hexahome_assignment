@@ -2,10 +2,6 @@
 
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
-interface FooterLinkProps {
-  label: string;
-  href: string;
-}
 
 export function Footer() {
   const socialLinks = [
@@ -54,7 +50,6 @@ export function Footer() {
           ))}
         </div>
 
-        {/* Links Section */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Links */}
           <div className="col-span-2 md:col-span-3 lg:col-span-2">
@@ -73,7 +68,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Our Branches */}
+          {/*  Branches */}
           <div className="col-span-1">
             <h3 className="text-xl font-bold mb-6">Our Branches</h3>
             <a
@@ -98,7 +93,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Contact Section */}
+        {/* Contact */}
         <div className="mb-12">
           <h3 className="text-xl font-bold mb-6">Contact</h3>
           <div className="space-y-4">
